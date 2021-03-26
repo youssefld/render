@@ -1,3 +1,30 @@
-{
-    "version": "1.0.0"
-}
+[
+    {
+        "name" : "Youssef",
+        "avatar": "http://simpleicon.com/wp-content/uploads/user1.svg",
+        "repositories": [
+            {
+                "name": "Apisense",
+                "commits": 25
+            },
+            {
+                "name": "repo1",
+                "commits": 29
+            }
+        ]
+    },
+    {
+        "name" : "Paula",
+        "avatar": "http://simpleicon.com/wp-content/uploads/user1.svg",
+        "repositories": [
+            {
+                "name": "repo2",
+                "commits": 25
+            },
+            {
+                "name": "repo4",
+                "commits": 20
+            }
+        ]
+    }
+]

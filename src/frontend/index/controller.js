@@ -19,3 +19,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
 
 
 $scope.date = new Date().toISOString();
+$scope.userCount = $scope.model.length;

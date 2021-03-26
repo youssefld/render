@@ -1,11 +1,23 @@
-<style>
-</style>
+<div >
+  <h2> User List: {{userCount}}</h2>
 
-
-<div>
-    <h1>Demo renderizer view.</h1>
-    <h3>Controller preview:</h3>
-    <h4>Date: {{date}}</h4>
-    <h3>Model preview:</h3>
-    <h4>Model version: {{model.version}}</h4>
+    <div ng-repeat='user in model' class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{{user.avatar}}" alt="..." class="card-img-top">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{user.name}}</h5>
+            <p class="card-text">{{user.description}}</p>
+            <ul class="list-group">
+              <li ng-repeat='repo in user.repositories' class="list-group-item d-flex justify-content-between align-items-center">
+                <a href='https://www.github.com/{{user.name}}/{{repo.name}}'>{{repo.name}}</a>
+                <span class="badge bg-primary rounded-pill">{{repo.commits}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
